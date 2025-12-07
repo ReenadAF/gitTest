@@ -1,0 +1,106 @@
+reenad1553@R:~$ cd disktop
+-bash: cd: disktop: No such file or directory
+
+reenad1553@R:~$ ls
+DDoSAttack_Project  Desktop  netflow_output  nfdump  requirements.txt  venv
+
+reenad1553@R:~$ cd Desktop
+
+reenad1553@R:~/Desktop$ ls
+cmd  java_arg
+
+reenad1553@R:~/Desktop$ cd cmd
+
+reenad1553@R:~/Desktop/cmd$ ls
+gitTest  java_code.class  java_code.java
+
+reenad1553@R:~/Desktop/cmd$ cd gitTest
+
+reenad1553@R:~/Desktop/cmd/gitTest$ ls
+README.md  java_code.class  java_code.java  java_code.java2  p1.py  p4.txt
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git clone https://github.com/ReenadAF/gitTest.git
+Cloning into 'gitTest'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (9/9), done.
+Resolving deltas: 100% (1/1), done.
+
+reenad1553@R:~/Desktop/cmd/gitTest$ ls
+README.md  gitTest  java_code.class  java_code.java  java_code.java2  p1.py  p4.txt
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git add java_code.java
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitTest/
+        java_code.class
+        java_code.java2
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git log
+commit a48332b4c7ceea605ce09af89ad63d2397d68898 (HEAD -> main)
+Author: Reenad <reenad1553@R.localdomain>
+Date:   Sat Dec 6 23:51:34 2025 +0300
+
+    java is ADDED!
+
+commit 0f5ba78a848c60063126484dfa8a739682f67b44 (origin/main, origin/HEAD)
+Author: ReenadAF <109044373+ReenadAF@users.noreply.github.com>
+Date:   Mon Dec 1 17:57:33 2025 +0300
+
+    Create p4.txt
+
+commit c9a20848a20f377a9b40c4febfafcb56c613e068
+Author: ReenadAF <109044373+ReenadAF@users.noreply.github.com>
+Date:   Mon Dec 1 16:35:02 2025 +0300
+
+    Create p1.py
+
+commit 4b3c8951c5c38b432423613396861d8c0e906a56
+Author: ReenadAF <109044373+ReenadAF@users.noreply.github.com>
+Date:   Mon Dec 1 16:33:07 2025 +0300
+
+    Initial commit
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git push
+Username for 'https://github.com': ReenadAF
+Password for 'https://ReenadAF@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/ReenadAF/gitTest.git/'
+
+reenad1553@R:~/Desktop/cmd/gitTest$ cd ~/Desktop/cmd/gitTest
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git branch
+* main
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git push https://github.com/ReenadAF/gitTest.git
+Username for 'https://github.com': ReenadAF
+Password for 'https://ReenadAF@github.com':
+
+remote: invalid credentials
+fatal: Authentication failed for 'https://github.com/ReenadAF/gitTest.git/'
+
+reenad1553@R:~/Desktop/cmd/gitTest$
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git push https://github.com/ReenadAF/gitTest.git
+Username for 'https://github.com': ReenadAF
+Password for 'https://%D9%82ReenadAF@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/ReenadAF/gitTest.git/'
+
+reenad1553@R:~/Desktop/cmd/gitTest$ git push https://github.com/ReenadAF/gitTest.git
+Username for 'https://github.com': ReenadAF
+Password for 'https://ReenadAF@github.com':
+remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/ReenadAF/gitTest.git/'
+
+reenad1553@R:~/Desktop/cmd/gitTest$
